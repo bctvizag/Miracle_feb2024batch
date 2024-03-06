@@ -1,0 +1,7 @@
+#div1 {
+    border: 3px solid green;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(212, 81, 81), rgb(112, 226, 112));
+}
