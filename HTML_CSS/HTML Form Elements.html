@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        .child{
+            background-color: lightgreen;
+            margin: 2px;
+            padding: 5px;    
+        }
+
+        .grid1{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            row-gap: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <form action="" class="grid1" >
+            <label for="username">text</label>
+            <input type="text" id="username" name="username" 
+                        placeholder="enter name" maxlength="20" minlength="5">
+            
+            <label for="">email</label>
+            <input type="email" disabled value="rao@bsnl.in">
+
+            <label for="">password</label>
+            <input type="password" >
+
+            <label for="">PAN</label>
+            <input type="tel" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" value="ABCDE1234X">
+
+            <label for="">PHONE</label>
+            <input type="tel" pattern="[0-9()+]{5} [0-9]{10}" >
+
+            
+            <label for="">Age : number </label>
+            <input type="number" max="32" min="18" step="5" placeholder="enter age" >
+            
+            <label for="">date</label>
+            <input type="date" min="2024-02-15" max="2024-04-15">
+            <label for="">time</label>
+            <input type="time" >
+            <label for="">datetime</label>
+            <input type="datetime-local" >
+            <label for="">week</label>
+            <input type="week" >
+            <label for="">month</label>
+            <input type="month" >
+            
+            <label for="">color</label>
+            <input type="color" >
+
+            <label for="">range</label>
+            <input type="range" >
+
+            <label for="">radio</label>
+            <div>
+                <label for="male">male <input type="radio"   name="gender"></label>
+                <label for="male">female <input type="radio" name="gender"></label>            
+            </div>
+
+            <label for="">checkbox</label>
+            <div>
+                <label for="male">English <input type="checkbox" checked  ></label>
+                <label for="male">Hindi <input type="checkbox" ></label>            
+                <label for="male">Telugu <input type="checkbox" ></label>            
+            </div>
+            
+            <label for="">file</label>
+            <input type="file">
+
+            <label for="">select</label>
+            <select name="" id="" >
+                <optgroup label="AP">
+                    <option value="vskp">Visakhapatnam</option>
+                    <option value="ank">Anakapalli</option>
+                    <option value="vskp">Anakapalli</option>
+                    <option value="vskp">Anakapalli</option>
+                </optgroup>
+                <optgroup label="TG">
+                    <option value="vskp">Visakhapatnam</option>
+                    <option value="ank">Anakapalli</option>
+                    <option value="vskp">Anakapalli</option>
+                    <option value="vskp">Anakapalli</option>
+                </optgroup>
+                
+            </select>
+
+            <label for="">textarea</label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+            
+        </form>
+
+
+    </div>   
+</body>
+</html>
